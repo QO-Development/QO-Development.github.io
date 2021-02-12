@@ -1,5 +1,8 @@
 import React from 'react';
 import './nav.css';
+import twitterIcon from '../../assets/twitter.png';
+import githubIcon from '../../assets/github.png';
+import linkedinIcon from '../../assets/linkedin.png';
 
 class Nav extends React.Component {
 
@@ -7,33 +10,32 @@ class Nav extends React.Component {
 
     return(
       
-      <nav class="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#e3f2fd'}}>
+      <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#e3f2fd'}}>
 
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Hawthorne Hacks</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/">Hawthorne Hacks</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+              <li className="nav-item">
+                <a className="nav-link" href="/">Projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <li className="nav-item">
+                <a className="nav-link" href="/">Contact</a>
               </li>
-              <li class="nav-item">
-                {/* <a class="nav-link" href="#">Twitter Icon</a> */}
-                <i class="fas fa-cloud"></i>
+              <li className="nav-item">
+                <a className="nav-link" href="https://twitter.com/hawtcode"><img src={twitterIcon}></img></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Github Icon</a>
+              <li className="nav-item">
+                <a className="nav-link" href="https://github.com/QO-Development"><img src={githubIcon}></img></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">LinkedIn Icon</a>
+              <li className="nav-item">
+                <a className="nav-link" href="https://www.linkedin.com/in/joshuahawthorne/"><img src={linkedinIcon}></img></a>
               </li>
             </ul>
           </div>
