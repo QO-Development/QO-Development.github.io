@@ -15,9 +15,9 @@ class NavHeader extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="linksContainer">
-            <Nav.Link href="/">About</Nav.Link>
-            <Nav.Link href="/">Projects</Nav.Link>
-            <Nav.Link href="/">Contact</Nav.Link>
+            <Nav.Link className="link" href="/">About</Nav.Link>
+            <Nav.Link className="link" href="/">Projects</Nav.Link>
+            <Nav.Link className="link" href="/">Contact</Nav.Link>
             <Nav.Link href="https://twitter.com/hawtcode"><img alt="twitter icon" src={twitterIcon}></img></Nav.Link>
             <Nav.Link href="https://github.com/QO-Development"><img alt="github icon" src={githubIcon}></img></Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/joshuahawthorne/"><img alt="linkedIn icon" src={linkedinIcon}></img></Nav.Link>

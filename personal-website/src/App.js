@@ -1,4 +1,5 @@
 import Nav from './components/nav';
+import Billboard from './components/billboard';
 
 
 function App() {
@@ -12,11 +13,7 @@ function App() {
         />
 
         <Nav />
-
-        <div>
-          <h1>Hello, world! Place the rest of your body code here</h1>
-
-        </div>
+        <Billboard />
       </>
   
   );
