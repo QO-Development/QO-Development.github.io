@@ -13,7 +13,7 @@ class NavHeader extends React.Component {
       <Navbar className="colorNav" expand="lg">
         <Navbar.Brand href="/"><h4>Hawthorne <br /> Hacks</h4></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse className="collapser" id="basic-navbar-nav">
           <Nav className="linksContainer">
             <Nav.Link className="link" href="/">About</Nav.Link>
             <Nav.Link className="link" href="/">Projects</Nav.Link>

@@ -6,3 +6,7 @@
   color: black;
   font-weight: bold;
 }
+
+.collapser {
+  justify-content: flex-end;
+}
