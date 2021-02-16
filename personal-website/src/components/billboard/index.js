@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import './billboard.css';
+import Typewriter from 'typewriter-effect';
 
 class Billboard extends React.Component {
   render() {
@@ -8,18 +9,22 @@ class Billboard extends React.Component {
       <Container>
         <Row>
           <Col style={{border: '2px red solid'}} md={12}>
-            <div className="typewriter">
-              <p className="type"> func make(coffee string) Product &#123; </p>
-              <p className="type"> if caffeinated &#123; </p>
-              <p className="type"> product := hack() </p>
-              <p className="type"> return product </p>
-              <p className="type"> &#125; </p>
-              <p className="type"> else &#123; </p>
-              <p className="type"> consume(coffee)</p>
-              <p className="type"> product := make(coffee)</p>
-              <p className="type"> return product</p>
-              <p className="type"> &#125; </p>
-            </div>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString('<span class="func">func</span> <span class="funcName">make</span>(coffee <span class="param">string</span>) Product { <br />')
+                  .pauseFor(1500)
+                  .typeString('<span class="indent"> <span class="keyword">if</span> caffeinated { </span> <br />')
+                  .typeString('<span class="doubleIndent">product := hack() </span> <br />')
+                  .typeString('<span class="doubleIndent"> <span class="keyword">return</span> product </span> <br />')
+                  .typeString('<span class="indent">} <span class="keyword"> else </span> { </span> <br />')
+                  .typeString('<span class="doubleIndent"> consume(coffee) </span> <br />')
+                  .typeString('<span class="doubleIndent"> product := make(coffee) </span> <br />')
+                  .typeString('<span class="keyword doubleIndent">return</span> product <br />')
+                  .typeString('<span class="indent">} </span> <br />')
+                  .typeString('}')
+                  .start();
+              }}
+            />
           </Col>
           <Col style={{border: '2px red solid'}} md={4}> 
             <h2>About</h2>
@@ -35,6 +40,14 @@ class Billboard extends React.Component {
             <p>Feel free to poke around, drop me a line, or check out examples of my past work below. Thanks for stopping by!</p>
           </Col>
         </Row>
+
+        <Row>
+          <Col>
+            <h2>Experience and Education</h2>
+            <p>Make a nicely formatted resume here, and make it hide by default</p>
+          </Col>
+        </Row>
+
         <Row>
           <Col>
             <h2>Projects</h2>
@@ -48,13 +61,6 @@ class Billboard extends React.Component {
         <Row>
           <Col>
             <h4>Want to see more public examples of my work? Check out my <a href="/">Github</a></h4>
-          </Col>
-        </Row>
-
-        <Row>
-          <Col>
-            <h2>Experience and Education</h2>
-            <p>Make a nicely formatted resume here, and make it hide by default</p>
           </Col>
         </Row>
 
