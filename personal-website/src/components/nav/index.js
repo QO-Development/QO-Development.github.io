@@ -11,7 +11,7 @@ class NavHeader extends React.Component {
   render() {
     return(
       <Navbar className="colorNav" expand="lg">
-        <Navbar.Brand href="/"><h3>Hawthorne Hacks</h3></Navbar.Brand>
+        <Navbar.Brand href="/"><h4>Hawthorne <br /> Hacks</h4></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="linksContainer">
