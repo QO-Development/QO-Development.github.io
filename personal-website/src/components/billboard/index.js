@@ -1,36 +1,21 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import './billboard.css';
-import Typewriter from 'typewriter-effect';
+import Typer from '../typer';
 
 class Billboard extends React.Component {
   render() {
     return(
       <Container>
         <Row>
-          <Col style={{border: '2px red solid'}} md={12}>
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter.typeString('<span class="func">func</span> <span class="funcName">make</span>(coffee <span class="param">string</span>) Product { <br />')
-                  .pauseFor(1500)
-                  .typeString('<span class="indent"> <span class="keyword">if</span> caffeinated { </span> <br />')
-                  .typeString('<span class="doubleIndent">product := hack() </span> <br />')
-                  .typeString('<span class="doubleIndent"> <span class="keyword">return</span> product </span> <br />')
-                  .typeString('<span class="indent">} <span class="keyword"> else </span> { </span> <br />')
-                  .typeString('<span class="doubleIndent"> consume(coffee) </span> <br />')
-                  .typeString('<span class="doubleIndent"> product := make(coffee) </span> <br />')
-                  .typeString('<span class="keyword doubleIndent">return</span> product <br />')
-                  .typeString('<span class="indent">} </span> <br />')
-                  .typeString('}')
-                  .start();
-              }}
-            />
-          </Col>
-          <Col style={{border: '2px red solid'}} md={4}> 
+          
+          <Typer />
+
+          <Col md={4}> 
             <h2>About</h2>
             <h4>Professional photo goes here</h4>
           </Col>
-          <Col style={{border: '2px red solid'}} md={8}>
+          <Col md={8}>
             <p>Hello! My name is Josh Hawthorne and I'm a Full Stack Software Engineer based in the Los Angeles/Orange County area of Southern California.</p>
             <p>My current tech stack includes React, React Native, Golang, PostgreSQL, Google Cloud Platform, and iOS development in Swift. I am passionate about creating great products that add value to people's lives with the latest and greatest technology. In other words, I like to build cool stuff. </p>
             <p>When I'm not building things you can probably find me on a board of some kind (surf, SUP, or snow), golfing, strength training, reading, or playing my guitar.</p>
