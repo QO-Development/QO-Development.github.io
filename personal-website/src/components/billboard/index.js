@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import './billboard.css';
 import Typer from '../typer';
+import Resume from '../resume';
 
 class Billboard extends React.Component {
   render() {
@@ -27,10 +28,7 @@ class Billboard extends React.Component {
         </Row>
 
         <Row>
-          <Col>
-            <h2>Experience and Education</h2>
-            <p>Make a nicely formatted resume here, and make it hide by default</p>
-          </Col>
+          <Resume />
         </Row>
 
         <Row>
