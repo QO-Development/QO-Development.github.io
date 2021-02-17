@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Button} from 'react-bootstrap';
 import './resume.css';
+import {useSpring, animated} from 'react-spring'
 
 class Resume extends React.Component {
 
@@ -13,14 +14,21 @@ class Resume extends React.Component {
   }
 
   render() {
-    return(
-      <Col>
 
-          <Button variant="outline-info" onClick={() => console.log('hello gon')}>Info</Button>
+    let overlay = null;
 
-          <div className="overlay">
+    const props = useSpring({opacity: 1, from: {opacity: 0}})
+
+    if (this.state.showOverlay) {
+      overlay = (
+        <animated.div className="overlay" style={props}>
             <div className="container">
-              <h2>Experience and Education</h2>
+              <div className="resumeHeader">
+                <h2>Experience and Education</h2>
+                <Button variant="info" onClick={() => this.setState({showOverlay: false})}>Done</Button>
+              </div>
+
+              <br />
 
               <h4>ViaLoop</h4>
               <h5>2017-2021</h5>
@@ -48,7 +56,18 @@ class Resume extends React.Component {
               <h5>Bachelors of Science, Electrical Engineering</h5>
               <h5>Minneapolis, MN; and Gold Coast, QLD, Australia</h5>
             </div>
-          </div>
+          </animated.div>
+      );
+    }
+
+    return(
+      <Col>
+        <div className="mainContainer">
+          <h3>Would you like to see my work history and education?</h3>
+          <br />
+          <Button variant="outline-info" onClick={() => this.setState({showOverlay: true})}>History &#38; Education</Button>
+        </div>
+        {overlay}
       </Col>
     );
   }
