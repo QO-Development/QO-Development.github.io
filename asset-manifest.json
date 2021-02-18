@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.54573adf.chunk.js",
-    "main.js.map": "/static/js/main.54573adf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.290c05a1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.290c05a1.js.map",
-    "static/js/2.16a2f4ef.chunk.js": "/static/js/2.16a2f4ef.chunk.js",
-    "static/js/2.16a2f4ef.chunk.js.map": "/static/js/2.16a2f4ef.chunk.js.map",
-    "static/js/3.9274ca3c.chunk.js": "/static/js/3.9274ca3c.chunk.js",
-    "static/js/3.9274ca3c.chunk.js.map": "/static/js/3.9274ca3c.chunk.js.map",
+    "main.css": "/static/css/main.cec779e1.chunk.css",
+    "main.js": "/static/js/main.4cfe4661.chunk.js",
+    "main.js.map": "/static/js/main.4cfe4661.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.41c72d72.js",
+    "runtime-main.js.map": "/static/js/runtime-main.41c72d72.js.map",
+    "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
+    "static/js/2.5fb7d4a4.chunk.js": "/static/js/2.5fb7d4a4.chunk.js",
+    "static/js/2.5fb7d4a4.chunk.js.map": "/static/js/2.5fb7d4a4.chunk.js.map",
+    "static/js/3.8850bf2b.chunk.js": "/static/js/3.8850bf2b.chunk.js",
+    "static/js/3.8850bf2b.chunk.js.map": "/static/js/3.8850bf2b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.16a2f4ef.chunk.js.LICENSE.txt": "/static/js/2.16a2f4ef.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.cec779e1.chunk.css.map": "/static/css/main.cec779e1.chunk.css.map",
+    "static/js/2.5fb7d4a4.chunk.js.LICENSE.txt": "/static/js/2.5fb7d4a4.chunk.js.LICENSE.txt",
+    "static/media/bg.41aa2e61.jpg": "/static/media/bg.41aa2e61.jpg",
+    "static/media/todayte.a0da26b1.jpg": "/static/media/todayte.a0da26b1.jpg",
+    "static/media/vertlasScreenshot.df9943de.png": "/static/media/vertlasScreenshot.df9943de.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.290c05a1.js",
-    "static/js/2.16a2f4ef.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.54573adf.chunk.js"
+    "static/js/runtime-main.41c72d72.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.5fb7d4a4.chunk.js",
+    "static/css/main.cec779e1.chunk.css",
+    "static/js/main.4cfe4661.chunk.js"
   ]
 }
