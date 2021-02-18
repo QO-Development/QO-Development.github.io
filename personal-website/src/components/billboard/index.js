@@ -1,34 +1,16 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 import './billboard.css';
 import Typer from '../typer';
 import Resume from '../resume';
-
-
-import {useSpring, animated} from 'react-spring'
-
-// function Test() {
-
-//   const props = useSpring({
-//     opacity: 1,
-//     from: {opacity: 0},
-//   })
-
-//   return(
-//     <animated.div style={props} className="test">
-      
-//     </animated.div>
-//   );
-// }
+import Projects from '../projects';
 
 class Billboard extends React.Component {
   render() {
     return(
       <Container>
         <Row>
-          
           <Typer />
-
           <Col md={4}> 
             <h2>About</h2>
             <h4>Professional photo goes here</h4>
@@ -48,19 +30,13 @@ class Billboard extends React.Component {
           <Resume />
         </Row>
 
-        <Row>
-          <Col>
-            <h2>Projects</h2>
-            <h3>Vertlas</h3>
-            <h3>Todayte</h3>
-            <h3>Backup Genius</h3>
-            <h3>And more...</h3>
-          </Col>
-        </Row>
+        <Projects />
 
         <Row>
-          <Col>
-            <h4>Want to see more public examples of my work? Check out my <a href="/">Github</a></h4>
+          <Col style={{textAlign: 'center', marginTop: 20}}>
+            <h4>Want to see more public examples of my work? Check out my Github below:</h4>
+            <br />
+            <Button variant="outline-info" onClick={ () => {window.open( "https://github.com/QO-Development", "_blank"); }}>GitHub</Button>
           </Col>
         </Row>
 

@@ -1,0 +1,30 @@
+.projectImage {
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.logoImage {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.headerContainer {
+  background-color: red;
+  width: '100%';
+}
+
+.headerText {
+  text-decoration: underline;
+}
+
+.bgImage {
+  width: 330px;
+  height: auto;
+  border-radius: 5px;
+}
