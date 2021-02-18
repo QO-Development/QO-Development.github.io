@@ -4,6 +4,23 @@ import './billboard.css';
 import Typer from '../typer';
 import Resume from '../resume';
 
+
+import {useSpring, animated} from 'react-spring'
+
+// function Test() {
+
+//   const props = useSpring({
+//     opacity: 1,
+//     from: {opacity: 0},
+//   })
+
+//   return(
+//     <animated.div style={props} className="test">
+      
+//     </animated.div>
+//   );
+// }
+
 class Billboard extends React.Component {
   render() {
     return(

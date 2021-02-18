@@ -1,7 +1,6 @@
 import Nav from './components/nav';
 import Billboard from './components/billboard';
 
-
 function App() {
   return (
       <>
