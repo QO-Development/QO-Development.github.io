@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Col, Button} from 'react-bootstrap';
 import './resume.css';
 import {useSpring, animated} from 'react-spring'
@@ -6,28 +6,42 @@ import {useSpring, animated} from 'react-spring'
 function Resume() {
 
   const [props, set] = useSpring( () => {
-
     return {
-      backgroundColor: 'blue',
-      marginTop: 400,
+      marginTop: '200%',
     }
   });  
+
+  const [containerProps, setContainer] = useSpring( () => {
+    return {
+      width: '0%',
+      marginTop: '200%',
+    }
+  });
+
+  const openAnimation = () => {
+    set({ marginTop: '0%'});
+    setContainer({width: '80%', marginTop: '0%'})
+
+  }
+
+  const closeAnimation = () => {
+    set({ marginTop: '200%'})
+    setContainer({width: '0%', marginTop: '200%'})
+  }
 
   return(
     <Col>
       <div className="mainContainer">
         <h3>Would you like to see my work experience and education?</h3>
         <br />
-        <Button variant="outline-info" onClick={ () => set({backgroundColor: 'red', marginTop: 0})}>Experience &#38; Education</Button>
+        <Button variant="outline-info" onClick={openAnimation}>Experience &#38; Education</Button>
       </div>
 
-      {/* {overlay} */}
-
       <animated.div className="overlay" style={props}>
-          <div className="container">
+          <animated.div className="container" style={containerProps}>
             <div className="resumeHeader">
               <h2>Experience and Education</h2>
-              <Button variant="info" onClick={ () => set({backgroundColor: 'red', marginTop: 0})}>Done</Button>
+              <Button variant="info" onClick={closeAnimation}>Done</Button>
             </div>
 
             <br />
@@ -57,7 +71,7 @@ function Resume() {
             <h5>2005-2010</h5>
             <h5>Bachelors of Science, Electrical Engineering</h5>
             <h5>Minneapolis, MN; and Gold Coast, QLD, Australia</h5>
-          </div>
+          </animated.div>
         </animated.div>
 
     </Col>
