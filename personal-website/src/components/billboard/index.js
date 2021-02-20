@@ -44,6 +44,21 @@ class Billboard extends React.Component {
           <Col>
             <h2>Skills</h2>
             <p>List all your skills here with icons...</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JavaScipt</p>
+            <p>React</p>
+            <p>React Native</p>
+            <p>Git</p>
+            <p>GitHub</p>
+            <p>Golang</p>
+            <p>PostgreSQL</p>
+            <p>MySQL</p>
+            <p>Google Cloud Platflorm</p>
+            <p>Swift</p>
+            <p>iOS Development</p>
+            <p>Command Line</p>
+            <p>VSCode</p>
           </Col>
         </Row>
 
