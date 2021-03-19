@@ -41,15 +41,15 @@ class Billboard extends React.Component {
               I graduated from the University of Minnesota in 2010 with a BS in
               Electrical Engineering, and a minor in Business Management. I
               spent a semester studying abroad in Australia on the Gold Coast,
-              and ever since inernational travel has been a great love of mine.
+              and ever since international travel has been a great love of mine.
             </p>
             <p>
               After school, I spent some time working in the oilfield as a field
-              engineer. In addition to Australia, I've also lived in Saudi
-              Arabia, Russia, and Mexico. My Spanish is aceptable, pero no puedo
-              hablar como nativo. I couldn't tell you more than 10 words in
-              Arabic if my life depended on it. And the only thing I know how to
-              do in Russian is curse (thanks Russian roughnecks).
+              engineer. In addition to Australia, I've lived in Saudi Arabia,
+              Russia, and Mexico. My Spanish is aceptable, pero no puedo hablar
+              como nativo. I couldn't tell you more than 10 words in Arabic if
+              my life depended on it. And the only thing I know how to do in
+              Russian is curse (thanks Russian roughnecks).
             </p>
             <p>
               Even though I was thousands of miles away, I knew something
