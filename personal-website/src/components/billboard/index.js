@@ -17,9 +17,9 @@ class Billboard extends React.Component {
         <Row>
           <Col md={4}>
             <h2>About</h2>
-            <h4>Professional photo goes here</h4>
+            {/* <h4>Professional photo goes here</h4> */}
           </Col>
-          <Col md={8}>
+          <Col id="about" md={8}>
             <p>
               Hello! My name is Josh Hawthorne and I'm a Full Stack Software
               Engineer based in the Los Angeles/Orange County area of Southern
@@ -95,7 +95,7 @@ class Billboard extends React.Component {
         <Row>
           <Col>
             <br />
-            <h2>Get in Touch</h2>
+            <h2 id="contact">Get in Touch</h2>
             <p>
               Got something you'd like to talk about? Please feel free to
               contact me at{" "}
