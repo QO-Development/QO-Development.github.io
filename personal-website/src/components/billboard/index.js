@@ -116,8 +116,15 @@ class Billboard extends React.Component {
           <Col>
             <div className="footer">
               <div className="smContainer">
-                <a href="/">Twitter</a> <a href="/">LinkedIn</a>{" "}
-                <a href="/">GitHub</a>
+                <a className="email" href="/">
+                  Twitter
+                </a>{" "}
+                <a className="email" href="/">
+                  LinkedIn
+                </a>{" "}
+                <a className="email" href="/">
+                  GitHub
+                </a>
               </div>
               <p>&copy; 2021 Hawthorne Hacks</p>
             </div>
