@@ -1,15 +1,16 @@
-
 .typeContainer {
   /*background-color: red; */
   height: 300px;
   padding-top: 50;
-  box-shadow: 0 0 5px 5px lightgrey;
+  /* box-shadow: 0 0 5px 5px lightgrey; */
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 5px;
+  filter: drop-shadow(10px 10px 4px #4444dd);
 }
 
 .indent {

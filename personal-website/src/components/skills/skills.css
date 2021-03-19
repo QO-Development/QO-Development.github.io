@@ -1,0 +1,11 @@
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skillPaper {
+  padding: 10px;
+  border-radius: 5px;
+  filter: drop-shadow(10px 10px 4px #4444dd);
+}

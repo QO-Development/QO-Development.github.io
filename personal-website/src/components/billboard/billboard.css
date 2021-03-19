@@ -1,0 +1,15 @@
+.email {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.smContainer {
+  margin-bottom: 10px;
+}
